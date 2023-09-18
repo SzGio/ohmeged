@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PENDAFTARAN MEMBER BARU GTC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h2 class="komunitas">KOMUNITAS SMK TI BALI GLOBAL DENPASAR</h2>
+            <div class="line"></div>
+            <h1>GLOBALITI COSPLAYER</h1>
+        </div>
+
+    </header>
+    <hr/></br>
+    <h1 align="center">GLOBALITI COSPLAYER</h1></br>
+    <center><img id="logo1" src="gambar/logo 1.jpg" width="20%"></center> 
+    <p id="ig" align="center">@globaliticos</p></br>
+
+    <div class="form">
+        <h1 class="registration" align="center">REGISTRATION</h1></br>
+        <form action="result.html" target="blank" method="POST" autocomplete="on" novalidate>
+            <label for="name"></label>
+                <input type="text" id="name" name="name" placeholder="Nama Lengkap">
+            <label for="kelas"></label>
+                <input type="text" id="kelas" name="kelas" placeholder="Kelas">
+            <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Email">
+            <label for="telfon"></label>
+                <input type="number" id="telfon" name="telfon" placeholder="No Hp">
+            <select name="section" id="section">
+                <option value="section">Pilih Section</option>
+                <option value="cosplayer">COSPLAYER</option>
+                <option value="backstage">BACK STAGE</option>
+            </select>
+            <label for="address"></label>
+                <textarea id="address" name="address" cols="20" rows="10" placeholder="Alasan mendaftar di komunitas GTC"></textarea>
+                <input type="submit" value="Submit" class="submit-btn">
+        </form>
+    </div>
+    </br><hr/></br>
+
+    <h2 align="center" class="judulmemories">MEMORIES</h2></br>
+
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="gambar/DSC02750.JPG" style="width:100%">
+      <div class="text"></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="gambar/DSC02755.JPG" style="width:100%">
+      <div class="text"></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="gambar/DSC02764.JPG" style="width:100%">
+      <div class="text"></div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    </div></br><hr/></br>
+    <div class="member">
+    <table>
+        <tr>
+          <th>MEMBER</th>
+          <th>CLASS</th>
+        </tr>
+        <tr>
+          <td>FARREL</td>
+          <td>XII ANIMASI</td>
+        </tr>
+        <tr>
+            <td>JHANSEN</td>
+            <td>XII RPL</td>
+        </tr>
+        <tr>
+            <td>SURYA</td>
+            <td>XII MM</td>
+        </tr>
+        <tr>
+            <td>WAHYU</td>
+            <td>XII DKV</td>
+        </tr>
+        <tr>
+            <td>NARA</td>
+            <td>XII MM</td>
+        </tr>
+        <tr>
+            <td>TRISTAN</td>
+            <td>XII MM</td>
+        </tr>
+        <tr>
+            <td>RYO</td>
+            <td>XII MM</td>
+        </tr>
+        <tr>
+            <td>MAHANIA</td>
+            <td>XII ANIMASI</td>
+        </tr>
+        <tr>
+            <td>COK GOPAL</td>
+            <td>XII RPL</td>
+        </tr>
+        <tr>
+            <td>RUSLOM</td>
+            <td>XII MM</td>
+        </tr>
+        <tr>
+            <td>RAMA YOGA</td>
+            <td>XII MM</td>
+        </tr>
+        <tr>
+            <td>LATIFAH</td>
+            <td>XII MM</td>
+        </tr>
+        <tr>
+            <td>LOUISE</td>
+            <td>XII ANIMASI</td>
+        </tr>
+        <tr>
+            <td>SURYA</td>
+            <td>XII MM5</td>
+        </tr>
+        <tr>
+            <td>SANIA</td>
+            <td>XI RPL</td>
+        </tr>
+        <tr>
+            <td>LEIA</td>
+            <td>XI DKV</td>
+        </tr>
+        <tr>
+            <td>VANIA</td>
+            <td>X MM</td>
+        </tr>
+        <tr>
+            <td>ADRIAN</td>
+            <td>X MM</td>
+        </tr>
+        <tr>
+            <td>CITRA</td>
+            <td>X ANIMASI</td>
+        </tr>
+        <tr>
+            <td>NATHAN</td>
+            <td>X ANIMASI</td>
+        </tr>
+        <tr>
+            <td>ZAHRA</td>
+            <td>X MM</td>
+        </tr>
+        <tr>
+            <td>ABDI</td>
+            <td>X RPL</td>
+        </tr>
+        <tr>
+            <td>KENZA</td>
+            <td>X MM</td>
+        </tr>
+        <tr>
+            <td>SANJAYA</td>
+            <td>X RPL</td>
+        </tr>
+        <tr>
+            <td>SHAFA</td>
+            <td>X DKV</td>
+        </tr>
+        <tr>
+            <td>VALE</td>
+            <td>X RPL</td>
+        </tr>
+        <tr>
+            <td>EXCEL</td>
+            <td>X RPL</td>
+        </tr>
+        <tr>
+            <td>RATU</td>
+            <td>X MM</td>
+        </tr>
+        <tr>
+            <td>EGI</td>
+            <td>X DKV</td>
+        </tr>
+        <tr>
+            <td>FAJAR</td>
+            <td>X ANIMASI</td>
+        </tr>
+        <tr>
+            <td>ANASTASYA</td>
+            <td>X ANIMASI</td>
+        </tr>
+        <tr>
+            <td>KHORI</td>
+            <td>X MM</td>
+        </tr>
+        <tr>
+            <td>SEVA</td>
+            <td>X RPL</td>
+        </tr>
+        <tr>
+            <td>ANDROMEDA</td>
+            <td>ALUMNI</td>
+        </tr>
+    </table>
+    </div>
+
+    </br></br>
+    <p align="center" class="copyright">Copyright2022</p>
+</body>
